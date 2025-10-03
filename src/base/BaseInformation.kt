@@ -19,5 +19,7 @@ enum class ProblemType(value: Int) {
 }
 enum class ProblemCategory(value: Int) {
     Arrays(0),
-    Binary_Search_Trees(1)
+    Binary_Search_Trees(1),
+    Linked_Lists(2),
+
 }

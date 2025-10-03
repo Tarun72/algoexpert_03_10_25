@@ -1,3 +1,5 @@
+import linkedlist.ProgramTest
+
 /**
  * https://github.com/Tarun72/algoexpert_03_10_25.git
  */
@@ -14,4 +16,6 @@ fun main() {
         // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
         println("i = $i")
     }
+
+    ProgramTest().TestCase1()
 }
