@@ -1,5 +1,7 @@
 package base
-
+/**
+ * https://github.com/Tarun72/algoexpert_03_10_25.git
+ */
 abstract class BaseInformation {
  abstract val problemUrl: String
  abstract val problemDescription: String
