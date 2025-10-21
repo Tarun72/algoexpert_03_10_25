@@ -3,7 +3,9 @@ package linkedlist
 import base.BaseInformation
 import base.ProblemCategory
 import base.ProblemType
-
+/**
+ * completed on 3-10-2025
+ */
 class RemoveDuplicates(
     override val problemUrl: String = "https://www.algoexpert.io/questions/remove-duplicates-from-linked-list",
     override val problemDescription: String = "You’re given the head of a Singly Linked List whose nodes are in sorted order with respect to their values.\n" +
