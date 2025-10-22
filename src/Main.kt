@@ -1,4 +1,7 @@
 import bst.ProgramTest
+import jdk.internal.lang.stable.StableUtil.array
+import sorting.InsertationSort
+
 //import linkedlist.ProgramTest
 
 /**
@@ -8,5 +11,10 @@ import bst.ProgramTest
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
 
-    ProgramTest().TestCase1()
+//    ProgramTest().TestCase1()
+    var array = mutableListOf(8, 5, 2, 9, 5, 6, 3)
+    print("$array")
+   val result =  InsertationSort().insertionSort(array)
+    println()
+    println("result: $result")
 }
