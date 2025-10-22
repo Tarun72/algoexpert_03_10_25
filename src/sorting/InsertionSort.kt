@@ -4,7 +4,7 @@ import base.BaseInformation
 import base.ProblemCategory
 import base.ProblemType
 
-class InsertationSort(
+class InsertionSort(
     override val problemUrl: String = "https://www.algoexpert.io/questions/insertion-sort",
     override val problemDescription: String = "Write a function that takes in an array of integers and returns a sorted version of that array.\n" +
             "Use the Insertion Sort algorithm to sort the array.",
