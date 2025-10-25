@@ -1,6 +1,5 @@
-import bst.ProgramTest
-import jdk.internal.lang.stable.StableUtil.array
-import sorting.InsertationSort
+import sorting.InsertionSort
+import sorting.SelectionSort
 
 //import linkedlist.ProgramTest
 
@@ -14,7 +13,8 @@ fun main() {
 //    ProgramTest().TestCase1()
     var array = mutableListOf(8, 5, 2, 9, 5, 6, 3)
     print("$array")
-   val result =  InsertationSort().insertionSort(array)
+//   val result =  InsertionSort().insertionSort(array)
+    val result = SelectionSort().selectionSort(array)
     println()
     println("result: $result")
 }
