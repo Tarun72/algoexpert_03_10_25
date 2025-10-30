@@ -4,7 +4,7 @@ import base.BaseInformation
 import base.ProblemCategory
 import base.ProblemType
 /**
- * started on 28-10-2025
+ * completed on 29-10-2025
  */
 class MinMaxStack(
     override val problemUrl: String = "https://www.algoexpert.io/questions/min-max-stack-construction",
