@@ -7,6 +7,7 @@ import base.ProblemType
 /**
  * started on 7th November 2025
  * needed to revise it
+ * first time completed on 15th November
  */
 class LinkedListConstructions(
     override val problemUrl: String = "https://www.algoexpert.io/questions/linked-list-construction",
