@@ -21,7 +21,7 @@ class RemoveDuplicates(
 ) : BaseInformation()
 
 // This is an input class. Do not edit.
-open class LinkedList(value: Int) {
+open class LinkedLists(value: Int) {
     var value = value
     var next: LinkedList? = null
     override fun toString(): String {
