@@ -1,3 +1,9 @@
+import binarysearch.BinarySearchAlgo
+import linkedlist.DoublyLinkedList
+import linkedlist.LinkedList
+import linkedlist.Node
+import linkedlist.RemoveKthElement
+import linkedlist.sumOfLinkedLists
 import sorting.InsertionSort
 import sorting.SelectionSort
 import stack.BalancedBrackets
@@ -11,126 +17,68 @@ import stack.MinMaxStack
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
+    val array = listOf(0, 1, 21, 33, 45, 45, 61, 71, 72, 73)
+    val target = 33
+    val expected = 3
+    val output =  BinarySearchAlgo().binarySearch(array, target)
+    println("expected: $expected, output: $output")
 
-    BalancedBrackets().balancedBrackets(")[]}")
+//    val ll1 = addMany(LinkedList(2), listOf(4, 7, 1))
+//    val ll2 = addMany(LinkedList(9), listOf(4, 5))
+//    val expected = addMany(LinkedList(1), listOf(9, 2, 2))
+//    val output = sumOfLinkedLists(ll1, ll2)
+//    assert(getNodesInArray(expected) == getNodesInArray(output))
 
-//    ProgramTest().TestCase1()
-//    var array = mutableListOf(8, 5, 2, 9, 5, 6, 3)
-//    print("$array")
-////   val result =  InsertionSort().insertionSort(array)
-//    val result = SelectionSort().selectionSort(array)
-//    println()
-//    println("result: $result")
+//    val ll1 = LinkedList(2)
+//    val ll2 = LinkedList(9)
+//
+//    val expected = LinkedList(1)
+//    expected.next = LinkedList(1)
+//
+//    val output = sumOfLinkedLists(ll1, ll2)
+//
+//    assert(getNodesInArray(expected) == getNodesInArray(output))
 
-//    val stack = MinMaxStack()
-//    stack.push(5)
-//    testMinMaxPeek(5, 5, 5, stack)
-//    stack.push(7)
-//    testMinMaxPeek(5, 7, 7, stack)
-//    stack.push(2)
-//    testMinMaxPeek(2, 7, 2, stack)
-//    assert(stack.pop() == 2)
-//    assert(stack.pop() == 7)
-//    testMinMaxPeek(5, 5, 5, stack)
-
-//    val stack = MinMaxStack()
 //
-//    stack.push(5)
-//    println("pushed 5")
-//    testMinMaxPeek(5, 5, 5, stack)
+//    val ll1 = addMany(LinkedList(4), listOf(6, 9, 3, 1))
+//    val ll2 = addMany(LinkedList(0), listOf(0, 0, 0, 2, 7))
 //
-//    stack.push(5)
-//    println("pushed 5")
-//    testMinMaxPeek(5, 5, 5, stack)
+//// Expected: 4 → 6 → 9 → 3 → 3 → 7
+//    val expected = LinkedList(4)
+//    expected.next = LinkedList(6)
+//    expected.next!!.next = LinkedList(9)
+//    expected.next!!.next!!.next = LinkedList(3)
+//    expected.next!!.next!!.next!!.next = LinkedList(3)
+//    expected.next!!.next!!.next!!.next!!.next = LinkedList(7)
 //
-//    stack.push(5)
-//    println("pushed 5")
-//    testMinMaxPeek(5, 5, 5, stack)
+//    val output = sumOfLinkedLists(ll1, ll2)
 //
-//    stack.push(5)
-//    println("pushed 5")
-//    testMinMaxPeek(5, 5, 5, stack)
-//
-//    stack.push(8)
-//    println("pushed 8")
-//
-//    testMinMaxPeek(5, 8, 8, stack)
-//
-//    stack.push(8)
-//    println("pushed 8")
-//    testMinMaxPeek(5, 8, 8, stack)
-//
-//    stack.push(0)
-//    println("pushed 0")
-//    testMinMaxPeek(0, 8, 0, stack)
-//
-//    stack.push(8)
-//    println("pushed 8")
-//    testMinMaxPeek(0, 8, 8, stack)
-//
-//    stack.push(9)
-//    println("pushed 9")
-//    testMinMaxPeek(0, 9, 9, stack)
-//
-//    stack.push(5)
-//    println("pushed 5")
-//    testMinMaxPeek(0, 9, 5, stack)
-//
-//// Pops start
-//    assert(stack.pop() == 5)
-//    println("pop 5")
-//    testMinMaxPeek(0, 9, 9, stack)
-//
-//    assert(stack.pop() == 9)
-//    println("pop 9")
-//    testMinMaxPeek(0, 8, 8, stack)
-//
-//    assert(stack.pop() == 8)
-//    testMinMaxPeek(0, 8, 0, stack)
-//
-//    assert(stack.pop() == 0)
-//    println("pop 0")
-//    testMinMaxPeek(5, 8, 8, stack)
-//
-//    assert(stack.pop() == 8)
-//    println("pop 8")
-//    testMinMaxPeek(5, 8, 8, stack)
-//
-//    assert(stack.pop() == 8)
-//    println("pop 8")
-//    testMinMaxPeek(5, 5, 5, stack)
-//
-//    assert(stack.pop() == 5)
-//    println("pop 5")
-//
-//    testMinMaxPeek(5, 5, 5, stack)
-//
-//    assert(stack.pop() == 5)
-//    println("pop 5")
-//
-//    testMinMaxPeek(5, 5, 5, stack)
-//
-//    assert(stack.pop() == 5)
-//    println("pop 5")
-//
-//    testMinMaxPeek(5, 5, 5, stack)
-//
-//    assert(stack.pop() == 5)
-//    println("pop 5")
-
-// stack is now empty
-
-
-
+////    assert(getNodesInArray(expected) == getNodesInArray(output))
+//    getNodesInArray(output)
 }
 
 
-fun testMinMaxPeek(min: Int, max: Int, peek: Int, stack: MinMaxStack) {
-    assert(stack.getMin() == min)
-    println("stack.getMin() ${stack.getMin()} and min is $min")
-    assert(stack.getMax() == max)
-    println("stack.getMax() ${stack.getMax()} and max is $max")
-    assert(stack.peek() == peek)
-    println("stack.peek() ${stack.peek()} and peek is $peek")
 
+fun addMany(linkedList: LinkedList, values: List<Int>): LinkedList {
+    var current = linkedList
+    while (current.next != null) {
+        current = current.next!!
+    }
+    for (value in values) {
+        current.next = LinkedList(value)
+        current = current.next!!
+    }
+    return linkedList
 }
+
+fun getNodesInArray(linkedList: LinkedList?): List<Int> {
+    val nodes = mutableListOf<Int>()
+    var current: LinkedList? = linkedList
+    while (current != null) {
+        println("current: ${current.value}")
+        nodes.add(current.value)
+        current = current.next
+    }
+    return nodes
+}
+

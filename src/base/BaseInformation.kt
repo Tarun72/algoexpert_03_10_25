@@ -25,6 +25,7 @@ enum class ProblemCategory(value: Int) {
     Sorting(4),
     Recursion(5),
     Stack(6),
-    String(7)
+    String(7),
+    BinarySearch(8)
 
 }
