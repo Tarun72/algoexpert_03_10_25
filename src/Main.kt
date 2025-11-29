@@ -4,6 +4,7 @@ import linkedlist.LinkedList
 import linkedlist.Node
 import linkedlist.RemoveKthElement
 import linkedlist.sumOfLinkedLists
+import recursion.Permutations
 import sorting.InsertionSort
 import sorting.SelectionSort
 import stack.BalancedBrackets
@@ -17,11 +18,22 @@ import stack.MinMaxStack
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-    val array = listOf(0, 1, 21, 33, 45, 45, 61, 71, 72, 73)
-    val target = 33
-    val expected = 3
-    val output =  BinarySearchAlgo().binarySearch(array, target)
-    println("expected: $expected, output: $output")
+
+    val input = listOf(1, 2, 3)
+    val output = Permutations().getPermutations(input)
+    assert(output.size == 6)
+    assert(output.contains(listOf(1, 2, 3)))
+    assert(output.contains(listOf(1, 3, 2)))
+    assert(output.contains(listOf(2, 1, 3)))
+    assert(output.contains(listOf(2, 3, 1)))
+    assert(output.contains(listOf(3, 1, 2)))
+    assert(output.contains(listOf(3, 2, 1)))
+    output.forEach { println(it) }
+//    val array = listOf(0, 1, 21, 33, 45, 45, 61, 71, 72, 73)
+//    val target = 33
+//    val expected = 3
+//    val output =  BinarySearchAlgo().binarySearch(array, target)
+//    println("expected: $expected, output: $output")
 
 //    val ll1 = addMany(LinkedList(2), listOf(4, 7, 1))
 //    val ll2 = addMany(LinkedList(9), listOf(4, 5))
