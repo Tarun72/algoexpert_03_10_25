@@ -1,6 +1,5 @@
 package linkedlist
 
-import addMany
 import base.BaseInformation
 import base.ProblemCategory
 import base.ProblemType
